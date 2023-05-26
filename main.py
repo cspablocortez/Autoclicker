@@ -15,3 +15,15 @@ print("Listening...")
 autoclicker_enabled = False
 
 # Infinite loop
+while True:
+    if keyboard.is_pressed(",") and autoclicker_enabled == False:
+        autoclicker_enabled = True
+        print("ON")
+        while autoclicker_enabled:
+            sleep(0.01)
+            start_clicking()
+
+            if keyboard.is_pressed(",") and autoclicker_enabled:
+                autoclicker_enabled = False
+                print("OFF")
+                sleep(0.1)
