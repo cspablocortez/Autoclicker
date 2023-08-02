@@ -20,7 +20,7 @@ while True:
         autoclicker_enabled = True
         print("ON")
         while autoclicker_enabled:
-            sleep(0.01)
+            sleep(0.1)
             start_clicking()
 
             if keyboard.is_pressed(",") and autoclicker_enabled:
